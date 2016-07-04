@@ -55,14 +55,14 @@
       <div class="col-lg-2 col-sm-3 col-md-2">
         <div class="top-cart-contain">
           <div class="mini-cart">
-            <div data-toggle="dropdown" data-hover="dropdown" class="basket dropdown-toggle"> <a href="#"> <i class="glyphicon glyphicon-shopping-cart"></i>
-                <div class="cart-box"><span class="title">cart</span><span id="cart-total">2 item </span></div>
-              </a></div>
+            <div data-toggle="dropdown" data-hover="dropdown" class="basket dropdown-toggle">
+                <div class="cart-box"><%= link_to_cart %></span></div>
+              </div>
             <div>
               <div style="display: none;" class="top-cart-content arrow_box">
                 <div class="block-subtitle">Recently added item(s)</div>
                 <ul id="cart-sidebar" class="mini-products-list">
-                  <li class="item even"> <a class="product-image" href="#" title="Downloadable Product "><img alt="Downloadable Product " src="products/product-small.jpg" width="80"></a>
+                  <li class="item even"> <a class="product-image" href="#" title="Downloadable Product"><%= image_tag "products/product-small.jpg" %></a>
                     <div class="detail-item">
                       <div class="product-details"> <a href="#" title="Remove This Item" onClick="" class="glyphicon glyphicon-remove">&nbsp;</a> <a class="glyphicon glyphicon-pencil" title="Edit item" href="#">&nbsp;</a>
                         <p class="product-name"> <a href="#" title="Downloadable Product">Downloadable Product </a> </p>
@@ -70,7 +70,7 @@
                       <div class="product-details-bottom"> <span class="price">$100.00</span> <span class="title-desc">Qty:</span> <strong>1</strong> </div>
                     </div>
                   </li>
-                  <li class="item last odd"> <a class="product-image" href="#" title="  Sample Product "><img alt="  Sample Product " src="products/product-small.jpg" width="80"></a>
+                  <li class="item last odd"> <a class="product-image" href="#" title="  Sample Product "><%= image_tag "products/product-small.jpg" %></a>
                     <div class="detail-item">
                       <div class="product-details"> <a href="#" title="Remove This Item" onClick="" class="glyphicon glyphicon-remove">&nbsp;</a> <a class="glyphicon glyphicon-pencil" title="Edit item" href="#">&nbsp;</a>
                         <p class="product-name"> <a href="#" title="  Sample Product "> Sample Product </a> </p>

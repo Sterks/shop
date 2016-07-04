@@ -8809,6 +8809,9 @@ ol#compare-items li a.product-name {
 }
 }
 
+
 .logo a img {
 	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
