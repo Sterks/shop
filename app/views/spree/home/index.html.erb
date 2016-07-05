@@ -3,10 +3,9 @@
     <%= render :partial => 'spree/shared/taxonomies' %>
   </div>
 <% end %>
-
+<%= render partial: "spree/shared/line" %>
 <div data-hook="homepage_products">
   <% cache(cache_key_for_products) do %>
     <%= render :partial => 'spree/shared/products', :locals => { :products => @products } %>
   <% end %>
 </div>
-

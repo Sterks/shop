@@ -46,10 +46,13 @@
           <%= logo %>
         </div>
       </div>
-      <%= render :partial => 'spree/shared/nav_bar' %>
+      <div class="col-lg-8 col-sm-6 col-md-8">
+        <%= render :partial => 'spree/shared/nav_bar' %>
+      </div>
+      <div class="col-lg-2 col-sm-3 col-md-2">
+        <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+      </div>
     </div>
-  </header>
-  <div class="container">
-    <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
   </div>
-</div>
+  <%= render partial: 'spree/shared/menu' %>
+</header>
